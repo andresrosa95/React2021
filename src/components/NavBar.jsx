@@ -4,12 +4,12 @@ import React from 'react'
 function NavBar() {
     return (
         <div>
-            <h2 className="tituloNav">CURSO REACT - NAV BAR</h2>
+            <h2 className="tituloNav">COMPRÁ DIVISAS SIN LIMITE</h2>
             <nav className="menu">
   <ul>
-    <li><a href="#">Inicio</a></li>
-    <li><a href="#">Nosotros</a></li>
-    <li><a href="#">Contacto</a></li>
+    <li><a href="#">Dolar</a></li>
+    <li><a href="#">Euro</a></li>
+    <li><a href="#">Real</a></li>
   </ul>
 </nav>
         </div>
