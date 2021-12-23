@@ -25,6 +25,7 @@ function NavBar() {
           <a class="dropdown-item" href="#">Parlantes Bluetooth</a>
           <a class="dropdown-item" href="#">Smartphones</a>
           <a class="dropdown-item" href="#">Smartwatches</a>
+          <a class="dropdown-item" href="#">Tablets</a>
           <a class="dropdown-item" href="#">Todos los productos</a>
         </div>
       </li>
