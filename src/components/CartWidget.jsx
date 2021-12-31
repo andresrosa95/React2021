@@ -1,9 +1,10 @@
 import React from 'react'
+import carrito from '../assets/img/carrito.png'
 
 function CartWidget() {
     return (
         <div>
-            <img src="https://findicons.com/files/icons/1579/devine/256/cart.png" alt="carritoCompra" height="35" width="40" />
+            <img src={carrito} alt="carritoCompra" height="35" width="40" />
         </div>
     )
 }

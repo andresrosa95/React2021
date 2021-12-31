@@ -10,15 +10,15 @@ function ItemCount({min, max}) {
     const HandleCountMinus=()=> {
         count > min ? setCount (prev => prev - 1) : console.log('minimo de compra')
 }
-    const AgregarCarrito=()=> {
-        alert ('Producto agregado al Carrito')
-    }
+    // const AgregarCarrito=()=> {
+    //     alert ('Producto agregado al Carrito')
+    // }
     return (
         <div>
                 <h3> {count} </h3>
                 <button onClick={HandleCountMinus}>-</button>
                 <button onClick={HandleCountPlus}>+</button><br/>
-                <button onClick={AgregarCarrito}>Agregar al Carrito</button>
+                {/* <button onClick={AgregarCarrito}>Agregar al Carrito</button> */}
         </div>
     )
 }
