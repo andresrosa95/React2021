@@ -1,4 +1,5 @@
 import './App.css';
+import ItemDetailContainer from './components/ItemDetailContainer';
 import ItemListContainer from './components/ItemListContainer';
 import NavBar from './components/NavBar';
 
@@ -15,8 +16,8 @@ function App() {
       </div>
       <NavBar/>
       <br />
-      <ItemListContainer producto1='Parlante JBL Xtreme 3' producto2='Notebook HP Omen' producto3='Samsung Z Flip 3'
-      producto4='Scooter Xiaomi Mi Pro 2' producto5='Apple Ipad Mini 2021' producto6='Smartwatch Amazfit GTS 3'/>
+      <ItemListContainer/>
+      <ItemDetailContainer/>
     </div>
   );
 }

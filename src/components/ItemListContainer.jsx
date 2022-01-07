@@ -1,10 +1,9 @@
 import React from "react";
-import ItemCount from "./ItemCount";
 import { useState, useEffect } from "react";
 import { getFetch } from "./mock";
 import ItemList from "./ItemList";
 
-function ItemListContainer(props) {
+function ItemListContainer() {
   const [productos, setProductos] = useState([]);
   const [loading, setLoading] = useState(true);
 

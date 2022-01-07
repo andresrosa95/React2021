@@ -1,12 +1,11 @@
-import carrito from '../assets/img/carrito.png'
 
 const productos = [
-    {id: 1, nombre: 'Amazfit GTS 3', img: 'https://dxelectronica.com.ar/wp-content/uploads/2021/11/AMAZFITGTS3NEGRO-1.jpg', stock: 12},
-    {id: 2, nombre: 'Hp OMEN', img: 'https://www.notebookcheck.org/fileadmin/Notebooks/News/_nc3/4_zu_3_omen1536.jpg', stock: 6},
-    {id: 3, nombre: 'Apple iPad Mini 2021', img: 'https://www.apple.com/newsroom/images/product/ipad/standard/Apple_iPad-mini_colors_09142021_big_carousel.jpg.large.jpg', stock: 5},
-    {id: 4, nombre: 'JBL Xtreme 3', img: 'https://m.media-amazon.com/images/I/81ZB3wID7oL._AC_SL1500_.jpg', stock: 4},
-    {id: 5, nombre: 'Scooter Xiaomi', img: 'https://cdn-static.flashme.com.ar/wp-content/uploads/2021/03/FBC4025GL-1.jpg', stock: 3},
-    {id: 6, nombre: 'Samsung Z Flip3',  img: 'https://images.samsung.com/ar/smartphones/galaxy-z-flip3-5g/buy/zflip3_carousel_marketingsinglekv_ex_mo.jpg', stock: 8}
+    {id: '1', nombre: 'Amazfit GTS 3', precio: '$23,500', img: 'assets/img/amazfitgts3.jpg', stock: 12, info: 'El Amazfit GTS 3 cuenta con una pantalla cuadrada AMOLED de 1,75 pulgadas en un diseño más fino y ligero. Además, viene con Alexa integrado y tiene una batería de 250 mAh que promete hasta 12 días de autonomía. Para personalizarlo, ofrece 100 esferas de reloj y la posibilidad de poner tu propia foto como imagen de fondo.'},
+    {id: '2', nombre: 'Laptop Hp Omen Rtx2070', precio: '$325,000', img: 'assets/img/hpomen.jpg', stock: 6},
+    {id: '3', nombre: 'Apple Iphone 13 Mini', precio: '$180,000', img: 'assets/img/iphone13mini.jfif', stock: 5},
+    {id: '4', nombre: 'JBL Xtreme 3', precio: '$75,000', img: 'assets/img/jblxtreme3.jpg', stock: 4},
+    {id: '5', nombre: 'Scooter Xiaomi M365', precio: '$115,000', img: 'assets/img/scooterxiaomi.jpg', stock: 3},
+    {id: '6', nombre: 'Samsung Z Flip3', precio: '$139,900',  img: 'assets/img/zflip3.jpg', stock: 8}
 ];
 
 export const getFetch = new Promise((resolve, reject)=>{

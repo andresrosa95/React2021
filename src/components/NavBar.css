@@ -1,4 +1,8 @@
 .tituloNav {
     text-align: center;
-    background-color:cornflowerblue;
+    background-color:rgb(235, 237, 100);
   }
+
+.barra {
+  background-color: crimson;
+}
