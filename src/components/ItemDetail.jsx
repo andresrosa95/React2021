@@ -1,12 +1,14 @@
+import ItemCount from "./ItemCount";
 
 const ItemDetail = ({producto}) => {
     return (
         <div>
             <h1>{producto.nombre} </h1>
-            <h2>{producto.precio}</h2>
-            <h3>{producto.info}</h3>
-            <h3>Stock: {producto.stock} unidades</h3><br />
             <img src={producto.img} width={450} height={450} alt={producto.nombre} /> <br />
+            <h3>{producto.info}</h3>
+            <h2>{producto.precio}</h2>
+            <ItemCount min={1} max={producto.stock} /> <br />
+            <h3>Stock: {producto.stock} unidades</h3><br />
         </div>
     )
 }
