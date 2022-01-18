@@ -5,6 +5,7 @@ import ItemListContainer from './components/ItemListContainer';
 import NavBar from './components/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Cart } from './components/Cart';
+import { CartContextProvider } from './components/CartContext';
 
 function App() {
 
@@ -13,8 +14,8 @@ function App() {
 
 
   return (
+    <CartContextProvider>
     <BrowserRouter>
-
 <div className="App"><h1>CORDOBA TECH</h1></div>
       <NavBar/>
       <br />
@@ -24,8 +25,8 @@ function App() {
       <Route exact path='/detalle/:idDetalle' element={<ItemDetailContainer/>} />   
       <Route exact path='/cart' element={<Cart/>} /> 
     </Routes>
-
         </BrowserRouter>
+        </CartContextProvider>
   );
 }
 

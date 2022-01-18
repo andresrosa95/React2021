@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState }from 'react'
 
-function ItemCount({min, max, onAdd}) {
+function ItemCount({min, max, onAdd, }) {
     const [count, setCount] = useState (min)
 
     const HandleCountPlus=()=> {
