@@ -5,16 +5,8 @@ const productos = [
     {id: '3', nombre: 'Apple Iphone 13 Mini', precio: 180000, img: '/assets/img/iphone13mini.jfif', stock: 5, categoria: 'smartphones', info: 'iPhone 13 mini. El sistema de dos cámaras más avanzado en un iPhone. El superrápido chip A15 Bionic. Un salto en duración de batería. Un diseño resistente. Y una pantalla Super Retina XDR más brillante.'},
     {id: '4', nombre: 'JBL Xtreme 3', precio: 75000, img: '/assets/img/jblxtreme3.jpg', stock: 4, categoria: 'parlantes', info: 'JBL Xtreme 3 ofrece un sonido natural, con una gran claridad y precisión, que se dispersa de manera uniforme. Un parlante que asegura potencia y calidad por igual en la reproducción de contenidos multimedia.'},
     {id: '5', nombre: 'Scooter Xiaomi M365', precio: 115000, img: '/assets/img/scooterxiaomi.jpg', stock: 3, categoria: 'movilidad', info: 'Xiaomi M365 es un nuevo patinete eléctrico color negro y de diseño elegante, desde la luz hasta los neumáticos.'},
-    {id: '6', nombre: 'Samsung Z Flip3', precio: 139900,  img: '/assets/img/zflip3.jpg', stock: 8, categoria: 'smartphones', info: 'Se pliega en el bolsillo. Entra en tu cartera. Se desliza en tus jeans más apretados. Cuando lo sacás, se abre un smartphone 5G con pantalla completa que se adapta a tus ángulos favoritos.'}
+    {id: '6', nombre: 'Samsung Z Flip3', precio: 139900,  img: '/assets/img/zflip3.jpg', stock: 8, categoria: 'smartphones', info: 'Se pliega en el bolsillo. Entra en tu cartera. Se desliza en tus jeans más apretados. Cuando lo sacás, se abre un smartphone 5G con pantalla completa que se adapta a tus ángulos favoritos.'},
+    {id: '7', nombre: 'Apple Ipad Mini', precio: 145000,  img: '/assets/img/ipadmini.jpg', stock: 5, categoria: 'tablets', info: 'El iPad mini enamora a primera vista. Su nuevo diseño con pantalla de extremo a extremo tiene bordes más finos y esquinas redondeadas.'},
+    {id: '8', nombre: 'Dell Alienware M15r5', precio: 399000,  img: '/assets/img/compudell.jpg', stock: 1, categoria: 'notebooks', info: 'La Alienware M15x es la laptop de 15 pulgadas para juegos más potente que Alienware ha creado y sólo merece tener los mejores gráficos.'},
+    {id: '9', nombre: 'Apple Watch 7 series', precio: 135000,  img: '/assets/img/applewatch.jfif', stock: 4, categoria: 'smartwaches', info: 'El Apple Watch Series 7 tiene la pantalla Retina siempre activa más grande y avanzada hasta ahora.'}
 ];
-
-export const getFetch = new Promise((resolve, reject)=>{
-    let condicion = true
-    if(condicion){
-        setTimeout(()=>{
-            resolve(productos)
-        },2000)
-    } else {
-        reject('error')
-    }
-})

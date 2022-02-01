@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import ItemDetail from "./ItemDetail"
-import { getFetch } from "./mock"
 import { useParams } from "react-router-dom";
 import { doc, getDoc, getFirestore } from 'firebase/firestore'
 
@@ -13,15 +12,18 @@ const ItemDetailContainer = () => {
         const db = getFirestore()
         const queryProd = doc(db, 'items', idDetalle)
         getDoc(queryProd)
-        .then((resp) =>{setProducto({id: resp.id, ...resp.data() });
+        .then((resp) =>{setProducto({id: resp.id, ...resp.data() })
         
-    });
+        
+    }) .finally(() => {setLoading(false)})
     },[idDetalle])
 
 
     return (
         <div>
-            <ItemDetail producto = {producto} />
+            {loading ?
+            <h2>Cargando...</h2> 
+            : <ItemDetail producto = {producto} />}
         </div>
     )
 }

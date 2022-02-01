@@ -18,7 +18,7 @@ function ItemListContainer() {
       const queryCollection = query(collection(db, 'items'), where ('categoria', '==', idCategoria));
       getDocs(queryCollection).then((res) =>
       setProductos(res.docs.map((prod) => ({ id: prod.id, ...prod.data() })))
-      );
+      ) .finally(() => {setLoading(false)})
 
     } else {
 
@@ -26,10 +26,7 @@ function ItemListContainer() {
     const queryCollection = collection(db, 'items');
     getDocs(queryCollection).then((res) =>
     setProductos(res.docs.map((prod) => ({ id: prod.id, ...prod.data() })))
-    );
-    setTimeout(()=>{
-      setLoading(false)
-  },1000)
+    ) .finally(() => {setLoading(false)})
 
     }
     
