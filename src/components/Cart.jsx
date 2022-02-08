@@ -112,7 +112,15 @@ export const Cart = () => {
                     onChange={handleChange}
                     value={dataForm.email}
                     />
-                <br />            
+                <br />
+                <input
+                    type='email'
+                    name='reemail'
+                    placeholder='repetir email'
+                    onChange={handleChange}
+                    value={dataForm.email}
+                    />
+                <br />             
                 <button onClick={realizarCompra}>Generar Orden</button>
                 </form>   
 

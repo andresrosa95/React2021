@@ -21,11 +21,17 @@ const ItemDetail = ({producto}) => {
             <img src={producto.img} width={450} height={450} alt={producto.nombre}/> <br />
             <h3>{producto.info}</h3>
             <h2>${producto.precio}</h2>
-            {show ? <ItemCount min={1} max={producto.stock} onAdd={onAdd}/> : 
+
+            { producto.stock > 0 ? <div>{show ? <ItemCount min={1} max={producto.stock} onAdd={onAdd}/> : 
             <div> 
                 <Link to='/cart'><button>Ver Carrito</button></Link>
                 <Link to='/'><button>Seguir Comprando</button></Link>
-            </div>}
+            </div>}</div> :
+                <h1>producto SIN stock </h1>}
+
+
+
+            
             
             
             <br />
