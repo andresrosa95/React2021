@@ -40,6 +40,7 @@ export const CartContextProvider = ({children}) => {
         return totalCarrito
     };  
 
+
     const totalCantidad = () => {
         let totalCant = 0;
         cartList.forEach((producto) => {

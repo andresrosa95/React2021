@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState }from 'react'
+import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 function ItemCount({min, max, onAdd, }) {
     const [count, setCount] = useState (min)
@@ -10,15 +12,15 @@ function ItemCount({min, max, onAdd, }) {
     const HandleCountMinus=()=> {
         count > min ? setCount (prev => prev - 1) : console.log('minimo de compra')
 }
-    //  const AgregarCarrito=()=> {
-    //      alert ('Producto agregado al Carrito')
-    //  }
     return (
         <div>
+            
                 <h3> {count} </h3>
-                <button onClick={HandleCountMinus}>-</button>
-                <button onClick={() => onAdd(count)}> Agregar al Carrito</button>
-                <button onClick={HandleCountPlus}>+</button>
+                <Button variant="outline-dark" onClick={HandleCountMinus}>-</Button>
+                <Button  onClick={() => onAdd(count)}variant="dark">Agregar al Carrito</Button>
+                <Button variant="outline-dark" onClick={HandleCountPlus}>+</Button>
+                <br />
+                <Link to='/'><Button  variant="dark">Volver al Inicio</Button></Link>
         </div>
     )
 }

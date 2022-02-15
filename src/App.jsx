@@ -1,22 +1,21 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import './App.css';
-import ItemDetailContainer from './components/ItemDetailContainer';
-import ItemListContainer from './components/ItemListContainer';
-import NavBar from './components/NavBar';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import NavBar from './components/Navbar/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Cart } from './components/Cart';
+import { Cart } from './components/Cart/Cart';
 import { CartContextProvider } from './context/CartContext';
 
 function App() {
 
-  const condition = true;
-  console.log(`this is ${condition ? 'correct' : 'incorrect'}`);
 
 
   return (
+    <div className="fondo">
     <CartContextProvider>
     <BrowserRouter>
-<div className="App"><h1>CORDOBA TECH</h1></div>
+
       <NavBar/>
       <br />
     <Routes>
@@ -27,7 +26,7 @@ function App() {
     </Routes>
         </BrowserRouter>
         </CartContextProvider>
-  );
+        </div>);
 }
 
 export default App;

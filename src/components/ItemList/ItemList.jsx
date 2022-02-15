@@ -1,5 +1,5 @@
 import React from "react";
-import Item from "./Item/Item";
+import Item from "../Item/Item";
 import './ItemList.css';
 
 function ItemList(props) {
@@ -10,16 +10,7 @@ function ItemList(props) {
     </div>
     
     )
-  
-  
-  
-  
   }
-
-
-
-
-
 
 
 export default ItemList

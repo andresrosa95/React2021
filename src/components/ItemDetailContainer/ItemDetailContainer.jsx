@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import ItemDetail from "./ItemDetail"
+import ItemDetail from "../ItemDetail/ItemDetail"
 import { useParams } from "react-router-dom";
 import { doc, getDoc, getFirestore } from 'firebase/firestore'
 
@@ -22,7 +22,7 @@ const ItemDetailContainer = () => {
     return (
         <div>
             {loading ?
-            <h2>Cargando...</h2> 
+            <div><img src="/assets/img/loading.gif" alt="carritoCompra" /></div> 
             : <ItemDetail producto = {producto} />}
         </div>
     )

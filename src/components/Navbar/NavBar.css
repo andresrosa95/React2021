@@ -1,0 +1,16 @@
+.tituloNav {
+    text-align: center;
+    background-color:rgb(235, 237, 100);
+  }
+
+
+.App {
+  text-align: center;
+
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}
